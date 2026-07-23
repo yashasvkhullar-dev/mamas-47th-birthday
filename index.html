@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy 47th Birthday, Mama! 🎂</title>
+    <meta name="description" content="A special birthday countdown for the most amazing mother in the world.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎂</text></svg>">
+</head>
+<body>
+    <div class="bg-particles" id="particles"></div>
+    <div class="bg-glow"></div>
+
+    <main class="container">
+        <!-- Pre-birthday countdown view -->
+        <div id="countdown-view" class="view">
+            <div class="sparkle-wrapper">
+                <span class="emoji-float">✨</span>
+                <h2 class="subtitle">Get Ready to Celebrate</h2>
+            </div>
+            
+            <h1 class="title">Mama's <span class="highlight">47th</span> Birthday</h1>
+            
+            <p class="tagline">Something beautiful is about to begin...</p>
+
+            <div class="countdown" id="countdown">
+                <div class="countdown-item">
+                    <div class="countdown-value" id="hours">00</div>
+                    <div class="countdown-label">Hours</div>
+                </div>
+                <div class="countdown-separator">:</div>
+                <div class="countdown-item">
+                    <div class="countdown-value" id="minutes">00</div>
+                    <div class="countdown-label">Minutes</div>
+                </div>
+                <div class="countdown-separator">:</div>
+                <div class="countdown-item">
+                    <div class="countdown-value" id="seconds">00</div>
+                    <div class="countdown-label">Seconds</div>
+                </div>
+            </div>
+
+            <div class="date-badge">
+                <span class="date-icon">🗓️</span>
+                <span>July 24, 2026</span>
+            </div>
+
+            <div class="hearts-row">
+                <span>💖</span><span>💖</span><span>💖</span>
+            </div>
+        </div>
+
+        <!-- Birthday celebration view (shown after countdown ends) -->
+        <div id="celebration-view" class="view hidden">
+            <div class="confetti-burst" id="confetti"></div>
+            <h1 class="celebration-title">🎉 Happy Birthday, Mama! 🎉</h1>
+            <p class="celebration-subtitle">Welcome to your special day!</p>
+            <div class="cake-emoji">🎂</div>
+            <p class="celebration-note">The full celebration page is coming soon...</p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>Made with <span class="heart-beat">❤️</span> by your family</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
